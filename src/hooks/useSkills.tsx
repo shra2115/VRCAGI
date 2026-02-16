@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BabyElfAGI } from '@/lib/agents/babyelfagi/executer';
+import { VrcElfAGI } from '@/lib/agents/vrcelfagi/executer';
 import { SPECIFIED_SKILLS } from '@/utils/constants';
 
 type SkillInfo = {
@@ -14,8 +14,8 @@ export const useSkills = (selectedAgentId?: string) => {
 
   useEffect(() => {
     const specificSkills =
-      selectedAgentId === 'babydeeragi' ? SPECIFIED_SKILLS : [];
-    const elf = new BabyElfAGI(
+      selectedAgentId === 'vrcdeeragi' ? SPECIFIED_SKILLS : [];
+    const elf = new VrcElfAGI(
       '',
       '',
       {
