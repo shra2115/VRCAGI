@@ -31,9 +31,9 @@ export const AgentParameter: FC<AgentParameterProps> = ({
     if (model.id !== 'gpt-4') {
       option = AGENT.filter(
         (agent) =>
-          agent.id === 'babyagi' ||
-          agent.id === 'babydeeragi' ||
-          agent.id === 'babyelfagi',
+          agent.id === 'vrcagi' ||
+          agent.id === 'vrcagi' ||
+          agent.id === 'vrcelfagi',
       );
     } else {
       option = AGENT;
@@ -62,7 +62,7 @@ export const AgentParameter: FC<AgentParameterProps> = ({
           }}
         />
       </div>
-      {agent.id === 'babyagi' && (
+      {agent.id === 'vrcagi' && (
         <div className="z-10 flex w-1/2 items-start pr-1">
           <Select
             label={translate('ITERATIONS')}
@@ -76,9 +76,9 @@ export const AgentParameter: FC<AgentParameterProps> = ({
           />
         </div>
       )}
-      {agent.id !== 'babycatagi' &&
-        agent.id !== 'babydeeragi' &&
-        agent.id !== 'babyelfagi' && (
+      {agent.id !== 'vrccatagi' &&
+        agent.id !== 'vrcdeeragi' &&
+        agent.id !== 'vrcelfagi' && (
           <div className="flex w-full flex-col">
             <label className="mb-2 text-left text-xs text-neutral-400 dark:text-neutral-500">
               {translate('FIRST_TASK')}
