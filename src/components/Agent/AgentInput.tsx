@@ -164,7 +164,7 @@ export const AgentInput: FC<InputProps> = ({
           rel="noreferrer"
           className="underline"
         >
-          BabyAGI UI
+          VRC
         </a>
         {' is designed to make it easier to run and develop with '}
         <a
@@ -173,7 +173,7 @@ export const AgentInput: FC<InputProps> = ({
           rel="noreferrer"
           className="underline"
         >
-          babyagi
+          vrc
         </a>
         {' in a web app, like a ChatGPT.'}
       </div>
